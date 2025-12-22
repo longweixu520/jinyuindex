@@ -1,10 +1,20 @@
 {
+  // ========== TypeScript 项目配置文件 ==========
+  // 这是一个项目引用（Project References）配置
+  // 将项目分为两个部分：应用代码和构建工具代码
+  // 这样可以分别配置不同的编译选项，提高编译效率
+  
   "files": [],
+  
+  // ========== 项目引用 ==========
+  // 引用子项目的 TypeScript 配置
   "references": [
     {
+      // Node.js 环境配置（用于 vite.config.ts 等构建工具文件）
       "path": "./tsconfig.node.json"
     },
     {
+      // 应用代码配置（用于 src/ 目录下的所有源代码）
       "path": "./tsconfig.app.json"
     }
   ]
